@@ -1,6 +1,14 @@
 module.exports = {
-    host: `${process.env.HOST}`,
-    user: `${process.env.USERNAME}`,
-    password: `${process.env.PASSWORD}`,
-    database: `${process.env.DATABASE}`,
-}
+    HOST: "localhost",
+    USER: "root",
+    PASSWORD: "",
+    DB: "testdb",
+    dialect: "mysql",
+    pool: {
+      max: 5,
+      min: 0,
+      acquire: 30000,
+      idle: 10000
+    }
+  };
+  
